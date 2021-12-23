@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>html on Duke | Personal blog template</title>
+    <link>https://juanfu.github.io/tags/html/</link>
+    <description>Recent content in html on Duke | Personal blog template</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh.tw</language>
+    <lastBuildDate>Thu, 23 Dec 2021 12:34:00 +0800</lastBuildDate><atom:link href="https://juanfu.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>心得</title>
+      <link>https://juanfu.github.io/blog/mind/</link>
+      <pubDate>Thu, 23 Dec 2021 12:34:00 +0800</pubDate>
+      
+      <guid>https://juanfu.github.io/blog/mind/</guid>
+      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
+    </item>
+    
+  </channel>
+</rss>
