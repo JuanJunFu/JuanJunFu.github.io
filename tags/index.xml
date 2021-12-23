@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Duke | Personal blog template</title>
-    <link>https://juanfu.github.io/tags/</link>
+    <link>https://juanjunfu.github.io/tags/</link>
     <description>Recent content in Tags on Duke | Personal blog template</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh.tw</language>
-    <lastBuildDate>Thu, 23 Dec 2021 12:34:00 +0800</lastBuildDate><atom:link href="https://juanfu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Dec 2021 12:34:00 +0800</lastBuildDate><atom:link href="https://juanjunfu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>html</title>
-      <link>https://juanfu.github.io/tags/html/</link>
+      <link>https://juanjunfu.github.io/tags/html/</link>
       <pubDate>Thu, 23 Dec 2021 12:34:00 +0800</pubDate>
       
-      <guid>https://juanfu.github.io/tags/html/</guid>
+      <guid>https://juanjunfu.github.io/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>https://juanfu.github.io/tags/hugo/</link>
+      <link>https://juanjunfu.github.io/tags/hugo/</link>
       <pubDate>Thu, 23 Dec 2021 12:34:00 +0800</pubDate>
       
-      <guid>https://juanfu.github.io/tags/hugo/</guid>
+      <guid>https://juanjunfu.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>自己學</title>
-      <link>https://juanfu.github.io/tags/%E8%87%AA%E5%B7%B1%E5%AD%B8/</link>
+      <link>https://juanjunfu.github.io/tags/%E8%87%AA%E5%B7%B1%E5%AD%B8/</link>
       <pubDate>Thu, 23 Dec 2021 12:34:00 +0800</pubDate>
       
-      <guid>https://juanfu.github.io/tags/%E8%87%AA%E5%B7%B1%E5%AD%B8/</guid>
+      <guid>https://juanjunfu.github.io/tags/%E8%87%AA%E5%B7%B1%E5%AD%B8/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Game</title>
-      <link>https://juanfu.github.io/tags/game/</link>
+      <link>https://juanjunfu.github.io/tags/game/</link>
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
       
-      <guid>https://juanfu.github.io/tags/game/</guid>
+      <guid>https://juanjunfu.github.io/tags/game/</guid>
       <description></description>
     </item>
     
     <item>
       <title>New</title>
-      <link>https://juanfu.github.io/tags/new/</link>
+      <link>https://juanjunfu.github.io/tags/new/</link>
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
       
-      <guid>https://juanfu.github.io/tags/new/</guid>
+      <guid>https://juanjunfu.github.io/tags/new/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Photos</title>
-      <link>https://juanfu.github.io/tags/photos/</link>
+      <link>https://juanjunfu.github.io/tags/photos/</link>
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
       
-      <guid>https://juanfu.github.io/tags/photos/</guid>
+      <guid>https://juanjunfu.github.io/tags/photos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>https://juanfu.github.io/tags/python/</link>
+      <link>https://juanjunfu.github.io/tags/python/</link>
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
       
-      <guid>https://juanfu.github.io/tags/python/</guid>
+      <guid>https://juanjunfu.github.io/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>React</title>
-      <link>https://juanfu.github.io/tags/react/</link>
+      <link>https://juanjunfu.github.io/tags/react/</link>
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
       
-      <guid>https://juanfu.github.io/tags/react/</guid>
+      <guid>https://juanjunfu.github.io/tags/react/</guid>
       <description></description>
     </item>
     
