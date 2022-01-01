@@ -59,9 +59,9 @@
                 var items = [];
                 for (var i in d) {
                     var item = {};
-                    item.title = d[i].gsx$title.$t;
-                    item.desc = d[i].gsx$desc.$t;
-                    item.tag = d[i].gsx$tag.$t;
+                    item.name = d[i].gsx$name.$t;
+                    item.organ = d[i].gsx$organ.$t;
+                    item.rol = d[i].gsx$rol.$t;
                     items.push(item);
                 }
                 console.table(items);
@@ -69,7 +69,7 @@
                     var Card = `
 
                 <div class="data">
-                    <h2>${items[i].title}</h2>
+                    <h2>${items[i].name}</h2>
                     <p>${items[i].desc}</p>
                     <span class="dtag">${items[i].tag}</span>
                 </div>
