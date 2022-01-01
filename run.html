@@ -21,6 +21,12 @@
   </head>
 <body>
 <script type="text/javascript">
+
+const uri = 'https://sheets.googleapis.com/v4/spreadsheets/12YEsZ_V0SOU9_9BHKozQti0ydgsgPa3ziRbZk4vUDcQ/values/people?alt=json&key=AIzaSyAVlwHA4EQx7AWjK1QsT87shL37vhKWrl4';
+const tdata = JSON.parse(uri)
+document.getElementById("demo").innerHTML = uri.range;
+
+
 var alldata = "a,b,c,d,e,f,g,h,i,j,k"
 var alldataarr = alldata.split(",");
 var num = alldataarr.length-1 ;
@@ -53,6 +59,7 @@ function GetRnd(min,max){
 
 <br>
 您的選擇是：<input type="text" id="showresult" value="">
+<p id="demo"></p>
 </center>
 </body>
 </html>
