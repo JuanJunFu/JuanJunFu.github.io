@@ -27,20 +27,25 @@ var num = alldataarr.length-1 ;
 var timer
 function change()
 {
-document.getElementById("oknum").innerHTML = alldataarr[GetRnd(0,num)];
-}
+	document.getElementById("oknum").innerHTML = alldataarr[GetRnd(0,num)];
+}//end function change
 function start(){
-clearInterval(timer);
-timer = setInterval('change()',10);
-}
+	clearInterval(timer);
+	timer = setInterval('change()',10);
+
+}//end function start
+
 function ok(){
-clearInterval(timer);
-document.getElementById("showresult").value=document.getElementById("oknum").innerText;
-}
+	clearInterval(timer);
+	document.getElementById("showresult").value=document.getElementById("oknum").innerText;
+}//end function ok
+
 function GetRnd(min,max){
-return parseInt(Math.random()*(max-min+1));
-}
+	return parseInt(Math.random()*(max-min+1));
+}//end function GetRnd
+
 </script>
+
 <center>
 <div id="oknum" name="oknum" >請單擊開始</div>
 <button οnclick="start()" accesskey="s">開始</button>
