@@ -53,21 +53,33 @@
     <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
 
     <script>
-        var dataurl = 'https://sheets.googleapis.com/v4/spreadsheets/1-vTT5LVlscvExPjqJHrhmlO2ZMM-93McoP-yXT8gyOU/values/%E5%B7%A5%E4%BD%9C%E8%A1%A81?alt=json&key=AIzaSyAVlwHA4EQx7AWjK1QsT87shL37vhKWrl4';
-
-        $.getJSON(dataurl,
-            function(json) {
-                var e = json.feed.entry,
-                    n = e.length;
-
-                $(e).each(function() {
-                    $('.results').append('<div class="data"><h2>' + this.gsx$title.$t + '</h2><p>' + this.gsx$desc.$t + '</p><span class="dtag">' + this.gsx$tag.$t + '</span></div>');
-                });
-
-
-            }
-        );
-    </script>
+        const uri = 'https://sheets.googleapis.com/v4/spreadsheets/1-vTT5LVlscvExPjqJHrhmlO2ZMM-93McoP-yXT8gyOU/values/工作表1?alt=json&key=AIzaSyAVlwHA4EQx7AWjK1QsT87shL37vhKWrl4';
+        
+        fetch(uri)
+          .then(res => res.json())
+          .then(res => {
+            const data = res.values;
+            console.log(data);
+   
+            data.shift();
+        
+            Array.prototype.forEach.call(data, d => {
+              let Card = `
+                <div class="card">
+                  <div class="avatar">
+                    <img src="${d[1]}">
+                  </div>
+                  <div class="text-center">
+                    <h4>${d[0]}</h4>
+                    <p>${d[3]}</p>
+                    <a href="">${d[2]}</a>
+                  </div>
+                </div>`;
+              
+              document.querySelector('.js-append-card').insertAdjacentHTML('beforeend', Card);
+            })
+          })
+      </script>
 
 </body>
 
