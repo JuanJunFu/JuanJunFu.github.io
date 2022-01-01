@@ -21,7 +21,7 @@
   </head>
 <body>
 <script type="text/javascript">
-var alldata = "a,b,c,d,e"
+var alldata = "a,b,c,d,e,f,g,h,i,j,k"
 var alldataarr = alldata.split(",");
 var num = alldataarr.length-1 ;
 var timer
@@ -48,8 +48,9 @@ function GetRnd(min,max){
 
 <center>
 <div id="oknum" name="oknum" >請單擊開始</div>
-<button οnclick="start()" accesskey="s">開始</button>
-<button οnclick="ok()" accesskey="o">停止</button>
+<button onclick="start()">開始</button>
+<button onclick="ok()">停止</button>
+
 <br>
 您的選擇是：<input type="text" id="showresult" value="">
 </center>
