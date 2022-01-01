@@ -54,14 +54,17 @@
 
     <script>
         $(function() {
-            $.get('https://sheets.googleapis.com/v4/spreadsheets/12YEsZ_V0SOU9_9BHKozQti0ydgsgPa3ziRbZk4vUDcQ/values/people?alt=json&key=AIzaSyAVlwHA4EQx7AWjK1QsT87shL37vhKWrl4', function(data) {
+            var surl = 'https://sheets.googleapis.com/v4/spreadsheets/1-vTT5LVlscvExPjqJHrhmlO2ZMM-93McoP-yXT8gyOU/values/工作表1?alt=json&key=AIzaSyAVlwHA4EQx7AWjK1QsT87shL37vhKWrl4';
+            var skurl = 'https://sheets.googleapis.com/v4/spreadsheets/12YEsZ_V0SOU9_9BHKozQti0ydgsgPa3ziRbZk4vUDcQ/values/people?alt=json&key=AIzaSyAVlwHA4EQx7AWjK1QsT87shL37vhKWrl4';
+            $.get(surl, function(data) {
                 var d = data.feed.entry;
                 var items = [];
-                for (var i in d) {
+                for(var i in d) {
                     var item = {};
                     item.name = d[i].gsx$name.$t;
-                    item.organ = d[i].gsx$organ.$t;
-                    item.rol = d[i].gsx$rol.$t;
+                    item.birthday = d[i].gsx$birthday.$t;
+                    item.email = d[i].gsx$email.$t;
+                    item.thumbnail = d[i].gsx$thumbnail.$t;
                     items.push(item);
                 }
                 console.table(items);
