@@ -54,17 +54,14 @@
 
     <script>
         $(function() {
-            var surl = 'https://sheets.googleapis.com/v4/spreadsheets/1-vTT5LVlscvExPjqJHrhmlO2ZMM-93McoP-yXT8gyOU/values/工作表1?alt=json&key=AIzaSyAVlwHA4EQx7AWjK1QsT87shL37vhKWrl4';
-            var skurl = 'https://sheets.googleapis.com/v4/spreadsheets/12YEsZ_V0SOU9_9BHKozQti0ydgsgPa3ziRbZk4vUDcQ/values/people?alt=json&key=AIzaSyAVlwHA4EQx7AWjK1QsT87shL37vhKWrl4';
-            $.get(surl, function(data) {
+            $.get('https://sheets.googleapis.com/v4/spreadsheets/1-vTT5LVlscvExPjqJHrhmlO2ZMM-93McoP-yXT8gyOU/values/%E5%B7%A5%E4%BD%9C%E8%A1%A81?alt=json&key=AIzaSyAVlwHA4EQx7AWjK1QsT87shL37vhKWrl4', function(data) {
                 var d = data.feed.entry;
                 var items = [];
-                for(var i in d) {
+                for (var i in d) {
                     var item = {};
-                    item.name = d[i].gsx$name.$t;
-                    item.birthday = d[i].gsx$birthday.$t;
-                    item.email = d[i].gsx$email.$t;
-                    item.thumbnail = d[i].gsx$thumbnail.$t;
+                    item.title = d[i].gsx$title.$t;
+                    item.desc = d[i].gsx$desc.$t;
+                    item.tag = d[i].gsx$tag.$t;
                     items.push(item);
                 }
                 console.table(items);
@@ -72,7 +69,7 @@
                     var Card = `
 
                 <div class="data">
-                    <h2>${items[i].name}</h2>
+                    <h2>${items[i].title}</h2>
                     <p>${items[i].desc}</p>
                     <span class="dtag">${items[i].tag}</span>
                 </div>
@@ -88,8 +85,3 @@
 
 </html>
 
-
-<!--作者: ouoholly
-鏈接: https://ouoholly.github.io/post/google-spreadsheet-data-to-json-javascript-html/
-來源: 我的倉庫 | ouoholly
-著作權歸作者所有。商業轉載請聯繫作者獲得授權。非商業轉載請註明出處。 -->
