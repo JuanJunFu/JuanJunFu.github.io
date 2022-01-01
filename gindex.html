@@ -53,35 +53,28 @@
     <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
 
     <script>
-        $(function() {
-            $.get('https://sheets.googleapis.com/v4/spreadsheets/1-vTT5LVlscvExPjqJHrhmlO2ZMM-93McoP-yXT8gyOU/values/%E5%B7%A5%E4%BD%9C%E8%A1%A81?alt=json&key=AIzaSyAVlwHA4EQx7AWjK1QsT87shL37vhKWrl4', function(data) {
-                var d = data.feed.entry;
-                var items = [];
-                for (var i in d) {
-                    var item = {};
-                    item.title = d[i].gsx$title.$t;
-                    item.desc = d[i].gsx$desc.$t;
-                    item.tag = d[i].gsx$tag.$t;
-                    items.push(item);
-                }
-                console.table(items);
-                for (var i in items) {
-                    var Card = `
+        var dataurl = 'https://sheets.googleapis.com/v4/spreadsheets/1-vTT5LVlscvExPjqJHrhmlO2ZMM-93McoP-yXT8gyOU/values/%E5%B7%A5%E4%BD%9C%E8%A1%A81?alt=json&key=AIzaSyAVlwHA4EQx7AWjK1QsT87shL37vhKWrl4';
 
-                <div class="data">
-                    <h2>${items[i].title}</h2>
-                    <p>${items[i].desc}</p>
-                    <span class="dtag">${items[i].tag}</span>
-                </div>
+        $.getJSON(dataurl,
+            function(json) {
+                var e = json.feed.entry,
+                    n = e.length;
 
-            `;
-                    $('.results').append(Card);
-                }
-            });
-        });
+                $(e).each(function() {
+                    $('.results').append('<div class="data"><h2>' + this.gsx$title.$t + '</h2><p>' + this.gsx$desc.$t + '</p><span class="dtag">' + this.gsx$tag.$t + '</span></div>');
+                });
+
+
+            }
+        );
     </script>
 
 </body>
 
 </html>
 
+
+作者: ouoholly
+鏈接: https://ouoholly.github.io/post/google-spreadsheet-data-to-json-javascript-html/
+來源: 我的倉庫 | ouoholly
+著作權歸作者所有。商業轉載請聯繫作者獲得授權。非商業轉載請註明出處。
